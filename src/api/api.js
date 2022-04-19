@@ -4,7 +4,7 @@ export var api = axios.create({
   headers: {
     "Content-type": "application/json",
   },
-  baseURL: 'http://localhost:5000',
+  baseURL: 'https://bc22-95-179-127-177.ngrok.io',
   responseType: "json",
 });
 
