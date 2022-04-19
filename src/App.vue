@@ -16,6 +16,10 @@ export default {
 </script>
 
 <style lang="scss">
+
+@import "src/assets/styles.scss";
+
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -24,20 +28,7 @@ export default {
   color: #2c3e50;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-html {
-  font-size: 100%;
-}
-
-.container{
-  margin: 0 auto;
-  max-width: 81.25rem; // === 1300px по макету при font-size: 16
-}
 
 @media screen and (max-width: 2600px) {
   html {
