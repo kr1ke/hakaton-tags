@@ -1,8 +1,8 @@
 <template>
-<!--  <div class="home">-->
-<!--    <v-chart class="chart" :option="option" />-->
-<!--    {{tags}}-->
-<!--  </div>-->
+  <div class="home">
+    <v-chart class="chart" :option="option" />
+    {{tags}}
+  </div>
 </template>
 
 <script>
@@ -107,8 +107,12 @@ export default {
 };
 </script>
 
-<style scoped>
-.chart {
-  height: 400px;
+<style scoped lang="scss">
+@import "src/assets/styles.scss";
+
+.home {
+  margin-left: size(700, 1920);
+  width: size(500, 1920);
+  height: size(500,1920);
 }
 </style>
