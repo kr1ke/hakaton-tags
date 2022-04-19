@@ -1,8 +1,8 @@
 <template>
-  <div class="home">
-    <v-chart class="chart" :option="option" />
-    {{tags}}
-  </div>
+<!--  <div class="home">-->
+<!--    <v-chart class="chart" :option="option" />-->
+<!--    {{tags}}-->
+<!--  </div>-->
 </template>
 
 <script>

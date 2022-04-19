@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import AppHeader from '../layouts/app-header.vue'
-import LoginHeader from '../layouts/login.vue'
+import AppHeader from '../components/app-header.vue'
+import LoginHeader from '../components/login.vue'
 
 Vue.use(VueRouter)
 
