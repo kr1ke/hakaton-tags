@@ -36,46 +36,45 @@ export default {
   data() {
     return {
       option: {
-        backgroundColor: "rgb(255,255,255)",
-        title: {
-          text: "Тэги",
-          left: "center",
-          color: "#000000"
-        },
         tooltip: {
-          trigger: "item",
-          formatter: "{a} <br/>{b} : {c} ({d}%)",
-          backgroundColor: "rgb(255,255,255)"
-
+          trigger: 'item'
         },
         legend: {
-          backgroundColor: "rgb(255,255,255)",
-          orient: "vertical",
-          left: "left",
-          color: "rgb(0,0,0)",
-          data: [
-            "Direct",
-            "Email",
-            "Ad Networks",
-            "Video Ads",
-            "Search Engines"
-          ]
+          top: '5%',
+          left: 'center'
         },
         series: [
           {
-            name: "Traffic Sources",
-            type: "pie",
-            radius: "55%",
-            center: ["50%", "60%"],
-            data: this.tags,
+            name: 'Access From',
+            type: 'pie',
+            radius: ['40%', '70%'],
+            avoidLabelOverlap: false,
+            itemStyle: {
+              borderRadius: 10,
+              borderColor: '#fff',
+              borderWidth: 2
+            },
+            label: {
+              show: false,
+              position: 'center'
+            },
             emphasis: {
-              itemStyle: {
-                shadowBlur: 10,
-                shadowOffsetX: 0,
-                shadowColor: "rgba(0,0,0,0.5)",
-                backgroundColor: "rgb(255,255,255)"
+              label: {
+                show: true,
+                fontSize: '40',
+                fontWeight: 'bold'
               }
-            }
+            },
+            labelLine: {
+              show: false
+            },
+            data: [
+              { value: 1048, name: 'Search Engine' },
+              { value: 735, name: 'Direct' },
+              { value: 580, name: 'Email' },
+              { value: 484, name: 'Union Ads' },
+              { value: 300, name: 'Video Ads' }
+            ]
           }
         ]
       }
@@ -107,8 +106,12 @@ export default {
 };
 </script>
 
-<style scoped>
-.chart {
-  height: 400px;
+<style scoped lang="scss">
+@import "src/assets/styles.scss";
+
+.home {
+  margin-left: size(700, 1920);
+  width: size(500, 1920);
+  height: size(500,1920);
 }
 </style>
